@@ -12,3 +12,24 @@
 **/RemoteSystemsTempFiles
 
 **/target/*
+*.fdt
+
+*.fdx
+
+*.fnm
+
+*.frq
+
+*.nrm
+
+*.prx
+
+*.tii
+
+*.tis
+
+server/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_1
+
+*.gen
+
+*.lock
