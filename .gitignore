@@ -29,6 +29,18 @@ local.properties
 # Eclipse Core
 .project
 
+#Eclipse related
+.fdt
+.fdx
+.fnm
+.frq
+.nrm
+.prx
+.tii
+.tis
+.gen
+.lock
+
 # External tool builders
 .externalToolBuilders/
 
