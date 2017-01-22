@@ -1,11 +1,27 @@
 package com.egen.MoviFlixApi.Entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class User {
 	
-	String emailId;
-	String firstName;
-	String lastName;
-	String usrPwd;
+	@Id
+	@Column(columnDefinition="VARCHAR(250)" ,unique=true)
+	private String emailId;
+	
+	@Column(columnDefinition="VARCHAR(100)")
+	private String firstName;
+	
+	@Column(columnDefinition="VARCHAR(100)")
+	private String lastName;
+	
+	
+	@Column(columnDefinition="VARCHAR(20)")
+	private String usrPwd;
 	
 	
 	
@@ -34,6 +50,11 @@ public class User {
 	}
 	public void setUsrPwd(String usrPwd) {
 		this.usrPwd = usrPwd;
+	}
+	@Override
+	public String toString() {
+		return "User [emailId=" + emailId + ", firstName=" + firstName + ", lastName=" + lastName + ", usrPwd=" + usrPwd
+				+ "]";
 	}
 	
 	
