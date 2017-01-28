@@ -40,7 +40,8 @@ server/.recommenders/caches/identified-project-coordinates.json
 server/.recommenders/caches/manual-mappings.json
 =======
 ### Eclipse ###
-**/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_2
+.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_2
+.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_2
 .metadata
 bin/
 tmp/
@@ -51,7 +52,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
-.recommenders
+.recommenders/
 
 # Eclipse Core
 .project
