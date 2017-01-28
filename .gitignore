@@ -30,6 +30,7 @@
 *.tis
 
 server/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_1
+server/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_2
 
 *.gen
 
