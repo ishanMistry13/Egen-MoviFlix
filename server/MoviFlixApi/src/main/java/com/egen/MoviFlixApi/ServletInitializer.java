@@ -6,7 +6,7 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class[] {APIConfig.class};
+		return new Class[] {APIConfig.class,JPAConfig.class};
 	}
 
 	@Override

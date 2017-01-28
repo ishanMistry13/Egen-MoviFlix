@@ -14,30 +14,30 @@ public class Tester {
 
 		EntityManager em = emf.createEntityManager();
 
-		User us;
+		User us = new User();
 
 		// UUID.randomUUID().toString();
 
-		/*
-		 * // INSERT RECORD us.setEmailId("ishanmistry13@gmail.com");
-		 * us.setFirstName("Ishan"); us.setLastName("Mistry");
-		 * us.setUsrPwd("admin");
-		 * 
-		 * 
-		 * em.getTransaction().begin(); em.persist(us);
-		 * em.getTransaction().commit();
-		 */
-
-		us = em.find(User.class, "ishanmistry13@gmail.com");
-		
-		us.setFirstName("Dhruv");
-		us.setLastName("Mistry");//This value will not be set as it was already same in the record
-
-		//UPDATE RECORD USING MERGE
+		// INSERT RECORD
+		us.setEmailId("ishanmistry13@gmail.com");
+		us.setFirstName("Ishan");
+		us.setLastName("Mistry");
+		us.setUsrPwd("admin");
 		em.getTransaction().begin();
-		em.merge(us);
+		em.persist(us);
 		em.getTransaction().commit();
 
+		/*
+		 * us = em.find(User.class, "ishanmistry13@gmail.com");
+		 * 
+		 * us.setFirstName("Dhruv"); us.setLastName("Mistry");//This value will
+		 * not be set as it was already same in the record
+		 */
+		// UPDATE RECORD USING MERGE
+		/*
+		 * em.getTransaction().begin(); em.merge(us);
+		 * em.getTransaction().commit();
+		 */
 		// For delete
 		/*
 		 * em.getTransaction().begin(); em.remove(us);

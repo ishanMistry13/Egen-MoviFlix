@@ -3,10 +3,14 @@ package com.egen.MoviFlixApi.Entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
+
 @Entity
-@Table
+//@Table
+//@NamedQueries(@NamedQuery(name = "User.GetUser", query = "Select u from User u Where u.email=:pEmailId AND u.email=:pUserPwd"))
 public class User {
 	
 	@Id
