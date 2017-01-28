@@ -7,6 +7,6 @@ public interface UserService {
 	
 	public User addUser(User user);
 	
-	public User findUser(String email, String userPwd);
+	public User findUser(String email);
 
 }

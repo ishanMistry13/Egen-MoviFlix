@@ -5,12 +5,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.Table;
+
 
 
 @Entity
 //@Table
-//@NamedQueries(@NamedQuery(name = "User.GetUser", query = "Select u from User u Where u.email=:pEmailId AND u.email=:pUserPwd"))
+@NamedQueries(@NamedQuery(name = "User.FindUser", query = "Select u from User u Where u.emailId=:pEmailId")
+	)
 public class User {
 	
 	@Id

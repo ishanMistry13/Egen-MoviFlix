@@ -6,6 +6,6 @@ public interface UserRepositry {
 	
 	public User addUser(User user);
 	
-	public User findUser(String email, String usrPwd);
+	public User findUser(String email);
 
 }
