@@ -14,13 +14,21 @@ public class UserRepositoryServImpl implements UserRepositry {
 	private EntityManager em;
 
 	@Override
-	public void addUser(User user) {
-
+	public User addUser(User user) {
+		em.getTransaction().begin();
+		em.persist(user);
+		em.getTransaction().commit();
+		
+		return user;
+		
 	}
 
 	@Override
 	public User findUser(String email, String usrPwd) {
-
+		
+		
+		
+		
 		return null;
 	}
 
