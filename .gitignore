@@ -12,6 +12,7 @@
 **/RemoteSystemsTempFiles
 
 **/target/*
+<<<<<<< HEAD
 *.fdt
 
 *.fdx
@@ -37,3 +38,71 @@ server/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_
 server/.recommenders/caches/identified-project-coordinates.json
 
 server/.recommenders/caches/manual-mappings.json
+=======
+### Eclipse ###
+**/.recommenders/index/http___download_eclipse_org_recommenders_models_neon_/segments_2
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+#Eclipse related
+*.fdt
+*.fdx
+*.fnm
+*.frq
+*.nrm
+*.prx
+*.tii
+*.tis
+*.gen
+*.lock
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# End of https://www.gitignore.io/api/eclipse
+>>>>>>> 135aecf828fb7d786fe77125b0867b32c97320c0
